@@ -9,5 +9,5 @@ nmap [[ <Action>(MethodUp)
 nmap ]] <Action>(MethodDown)
 
 nmap gb <Action>(Back)
-nmap gd <Action>(GotoDeclarationOrUsages)
+nmap gd <Action>(GotoDeclaration)
 nmap gf <Action>(Forward)
