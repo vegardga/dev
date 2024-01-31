@@ -1,0 +1,13 @@
+source ~/.vimrc
+
+""" IdeaVim options
+" Map vim marks to IDEA global marks
+set ideamarks
+
+""" IdeaVim actions
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+
+nmap gb <Action>(Back)
+nmap gd <Action>(GotoDeclarationOrUsages)
+nmap gf <Action>(Forward)
