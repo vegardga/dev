@@ -32,7 +32,13 @@ tar -xvf archive.tar [files/directories]
 ## Vim
 
 
-## Docker
+## Docker / Colima
+
+Start Colima:
+
+```
+colima start --cpu 4 --memory 16 --disk 100
+```
 
 Remove all images:
 
