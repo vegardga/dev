@@ -40,6 +40,12 @@ Start Colima:
 colima start --cpu 4 --memory 16 --disk 100
 ```
 
+List running containers:
+
+```
+docker ps --format "table {{.Names}}\t{{.Status}}"
+```
+
 Remove all images:
 
 ```
