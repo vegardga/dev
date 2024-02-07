@@ -1,7 +1,9 @@
 set number
 set relativenumber
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set autoindent
 set mouse=a
 set hls
@@ -12,13 +14,17 @@ set ignorecase smartcase
 set cpoptions+=$
 set autochdir
 
-call plug#begin()
-Plug 'machakann/vim-highlightedyank'
-call plug#end()
+if has('nvim')
+	" nvim plugins
+else
+	call plug#begin()
+	Plug 'machakann/vim-highlightedyank'
+	call plug#end()
+endif
 
 nmap Y y$
 
-imap <C-i> <Esc>
+inoremap <C-i> <Esc>
 
 "" visual shifting (builtin-repeat)
 vnoremap < <gv
