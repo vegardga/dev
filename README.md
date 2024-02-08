@@ -1,6 +1,6 @@
 # dev
-Development stuff
 
+Development stuff
 
 ## File Compression and Archiving
 
@@ -8,29 +8,27 @@ Compression:
 
 ```
 tar -cvf archive.tar [files/directories]
-
-# -c: Create a new archive
-# -v: Verbosely list the files processed
-# -f: Use archive file specified
 ```
+
+-c: Create a new archive
+-v: Verbosely list the files processed
+-f: Use archive file specified
 
 ```
 tar -cvzf archive.tar.gz [files/directories]
-
-# -z: Gzip
 ```
+
+-z: Gzip
 
 Extraction:
 
 ```
 tar -xvf archive.tar [files/directories]
-
-# -x: Extract archive
 ```
 
+-x: Extract archive
 
 ## Vim
-
 
 ## Docker / Colima
 
@@ -56,14 +54,17 @@ Remove all containers:
 
 ```
 docker stop $(docker ps -a -q)
+```
+
+```
 docker rm $(docker ps -a -q)
 ```
 
 Remove all volumes:
+
 ```
 docker volume rm $(docker volume ls -q)
 ```
-
 
 ## Elasticsearch
 
@@ -83,11 +84,10 @@ POST /_cluster/reroute?dry_run=false
             "move" : {
                 "index" : "insert_index_name_here",
                 "shard" : insert_shard_number_here,
-                "from_node" : "insert_from_node_here", 
+                "from_node" : "insert_from_node_here",
                 "to_node" : "insert_to_node_here"
             }
         }
     ]
 }
 ```
-
