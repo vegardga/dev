@@ -19,6 +19,7 @@ if has('nvim')
 else
 	call plug#begin()
 	Plug 'machakann/vim-highlightedyank'
+  Plug 'christoomey/vim-tmux-navigator'
 	call plug#end()
 endif
 
