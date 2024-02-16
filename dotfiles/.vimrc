@@ -11,7 +11,7 @@ set incsearch
 set nocompatible
 set clipboard=unnamed
 set ignorecase smartcase
-set cpoptions+=$
+"set cpoptions+=$
 set autochdir
 
 if has('nvim')
