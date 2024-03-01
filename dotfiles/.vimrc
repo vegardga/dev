@@ -13,6 +13,8 @@ set clipboard=unnamed
 set ignorecase smartcase
 "set cpoptions+=$
 set autochdir
+set undolevels=1000
+set nrformats+=alpha
 
 if has('nvim')
 	" nvim plugins
