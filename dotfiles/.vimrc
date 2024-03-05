@@ -26,6 +26,7 @@ else
 endif
 
 nmap Y y$
+nnoremap x "_x
 
 inoremap <C-i> <Esc>
 
