@@ -6,6 +6,7 @@ set softtabstop=2
 set shiftwidth=2
 set autoindent
 set mouse=a
+set wrap
 set hls
 set incsearch
 set nocompatible
