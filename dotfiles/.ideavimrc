@@ -11,3 +11,23 @@ nmap ]] <Action>(MethodDown)
 nmap gb <Action>(Back)
 nmap gd <Action>(GotoDeclaration)
 nmap gf <Action>(Forward)
+
+" Harpoon
+"nmap <M-j> :action HarpoonerOpenFile0<cr>
+"nmap <M-k> :action HarpoonerOpenFile1<cr>
+"nmap <M-l> :action HarpoonerOpenFile2<cr>
+"nmap <M-;> :action HarpoonerOpenFile3<cr>
+nmap <leader>j :action HarpoonerOpenFile0<cr>
+nmap <leader>k :action HarpoonerOpenFile1<cr>
+nmap <leader>o :action HarpoonerOpenFile2<cr>
+nmap <leader>ø :action HarpoonerOpenFile3<cr>
+
+nmap <C-e> :action HarpoonerQuickMenu<cr>
+nmap <leader>a :action HarpoonerAddFile<cr>
+
+" nmap <M-4> :action HarpoonerOpenFile4<cr>
+" nmap <M-5> :action HarpoonerOpenFile5<cr>
+" nmap <M-6> :action HarpoonerOpenFile6<cr>
+" nmap <M-7> :action HarpoonerOpenFile7<cr>
+" nmap <M-8> :action HarpoonerOpenFile8<cr>
+" nmap <M-9> :action HarpoonerOpenFile9<cr>
