@@ -1,3 +1,6 @@
+"remap <SPACE> <Nop>
+let mapleader="\<Space>"
+
 set number
 set relativenumber
 set expandtab
