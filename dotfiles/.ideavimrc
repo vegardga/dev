@@ -1,5 +1,8 @@
 source ~/.vimrc
 
+" set <leader> to <space>
+let mapleader = " "
+
 """ IdeaVim options
 " Map vim marks to IDEA global marks
 set ideamarks
@@ -11,6 +14,10 @@ nmap ]] <Action>(MethodDown)
 nmap gb <Action>(Back)
 nmap gd <Action>(GotoDeclaration)
 nmap gf <Action>(Forward)
+
+nmap <leader>ft <Action>(ActivateTerminalToolWindow)
+nmap <leader>gg <Action>(ActivateCommitToolWindow)
+nmap <leader>e <Action>(ActivateProjectToolWindow)
 
 " Harpoon
 "nmap <M-j> :action HarpoonerOpenFile0<cr>
