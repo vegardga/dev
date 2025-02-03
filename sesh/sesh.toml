@@ -1,0 +1,25 @@
+# [default session]
+# startup_command = "nvim +GoToFile"
+
+[[session]]
+name = "Home"
+path = "~"
+startup_command = "l"
+
+[[session]]
+name = "Downloads"
+path = "~/Downloads/"
+
+[[session]]
+name = "Dev"
+path = "~/dev/"
+
+[[session]]
+name = "Dev-repo"
+path = "~/dev/dev/"
+startup_command = "nvim"
+
+[[session]]
+name = "nvim-config"
+path = "~/.config/nvim/"
+startup_command = "nvim"

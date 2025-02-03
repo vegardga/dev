@@ -1,2 +1,5 @@
 font-family = "MesloLGL Nerd Font Mono"
 theme = rose-pine-moon
+
+# <perfix>+k (open sesh picker)
+keybind = super+k=text:\x02\x54
