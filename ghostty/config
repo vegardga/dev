@@ -3,3 +3,6 @@ theme = rose-pine-moon
 
 # <perfix>+k (open sesh picker)
 keybind = super+k=text:\x02\x54
+
+# <perfix>+l (change to last sesh)
+keybind = super+l=text:\x02\x4C
