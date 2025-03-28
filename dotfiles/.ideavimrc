@@ -3,21 +3,93 @@ source ~/.vimrc
 " set <leader> to <space>
 let mapleader = " "
 
+set commentary
+
 """ IdeaVim options
 " Map vim marks to IDEA global marks
 set ideamarks
+set ideajoin
+set matchpairs+=<:>
 
 """ IdeaVim actions
 nmap [[ <Action>(MethodUp)
 nmap ]] <Action>(MethodDown)
 
 nmap gb <Action>(Back)
+nmap gw <Action>(Forward)
 nmap gd <Action>(GotoDeclaration)
-nmap gf <Action>(Forward)
+nmap gr <Action>(FindUsages)
+nmap gI <Action>(GotoImplementation)
+
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gm <Action>(GotoSuperMethod)
+nmap <leader>gl <Action>(GotoLine)
+
+nmap <leader>uu <Action>(ShowUsages)
+nmap <leader>vs <Action>(ViewSource)
+nmap <leader>D <Action>(QuickTypeDefinition)
+nmap <leader>im <Action>(QuickImplementations)
+nmap <leader>ti <Action>(ExpressionTypeInfo)
+nmap <leader>oo <Action>(FileStructurePopup)
+
+nmap K <Action>(ShowHoverInfo)
 
 nmap <leader>ft <Action>(ActivateTerminalToolWindow)
 nmap <leader>gg <Action>(ActivateCommitToolWindow)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
+
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+nmap <leader>wv <Action>(SplitVertically)
+nmap <leader>ws <Action>(SplitHorizontally)
+nmap <leader>ww <Action>(Unsplit)
+nmap <leader>wa <Action>(UnsplitAll)
+nmap <leader>wo <Action>(HideAllWindows)
+nmap <leader>wz <Action>(ToggleZenMode)
+
+nmap <leader>sc <Action>(GotoClass)
+nmap <leader>sf <Action>(GotoFile)
+nmap <leader>ss <Action>(GotoSymbol)
+nmap <leader>sa <Action>(GotoAction)
+nmap <leader>sg <Action>(FindInPath)
+nmap <leader>se <Action>(SearchEverywhere)
+nmap <leader><leader> <Action>(SearchEverywhere)
+
+"nmap <leader>ca <Action>(CodeAction)
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+map <leader>ca <Action>(ShowIntentionActions)
+map <leader>cs <Action>(SurroundWith)
+map <leader>cc <Action>(EditorCompleteStatement)
+map <leader>cf <Action>(ReformatCode)
+map <leader>ci <Action>(OptimizeImports)
+
+map <leader>tr <Action>(RunClass)
+map <leader>td <Action>(DebugClass)
+map <leader>tc <Action>(RunCoverage)
+map <leader>tl <Action>(Rerun)
+"map <leader>tt <Action>(RunClass)
+"map <leader>tS <Action>(RunClass)
+"map <leader>ts <Action>(RunClass)
+map <leader>ts <Action>(ActivateRunToolWindow)
+map <leader>to <Action>(HideActiveWindow)
+
+map <leader>en <Action>(GotoNextError)
+map <leader>ep <Action>(GotoPreviousError)
+
+map <leader>lc <Action>(JumpToLastChange)
+map <leader>ll <Action>(RecentLocations)
+
+map <leader>fs <Action>(NewScratchFile)
 
 " Harpoon
 "nmap <M-j> :action HarpoonerOpenFile0<cr>
