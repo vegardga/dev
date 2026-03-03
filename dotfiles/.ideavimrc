@@ -1,3 +1,5 @@
+""" <leader><leader>Track action ids
+
 source ~/.vimrc
 
 " set <leader> to <space>
@@ -44,6 +46,16 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" nmap H <Action>(ActivatePreviousTab)
+" nmap <S-j> <C-w>j
+" nmap <S-k> <C-w>k
+" nmap L <Action>(ActivateNextTab)
+
+map <leader>gh <Action>(Diff.PrevChange)
+map <leader>gj <Action>(NextDiff)
+map <leader>gk <Action>(PreviousDiff)
+map <leader>gl <Action>(Diff.NextChange)
+
 nmap <leader>wv <Action>(SplitVertically)
 nmap <leader>ws <Action>(SplitHorizontally)
 nmap <leader>ww <Action>(Unsplit)
@@ -57,6 +69,7 @@ nmap <leader>ss <Action>(GotoSymbol)
 nmap <leader>sa <Action>(GotoAction)
 nmap <leader>sg <Action>(FindInPath)
 nmap <leader>se <Action>(SearchEverywhere)
+nmap <leader>sr <Action>(RecentFiles)
 nmap <leader><leader> <Action>(SearchEverywhere)
 
 "nmap <leader>ca <Action>(CodeAction)
@@ -82,6 +95,15 @@ map <leader>tl <Action>(Rerun)
 "map <leader>ts <Action>(RunClass)
 map <leader>ts <Action>(ActivateRunToolWindow)
 map <leader>to <Action>(HideActiveWindow)
+
+map <leader>dB <Action>(ViewBreakpoints)
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>dc <Action>(Resume)
+map <leader>di <Action>(StepInto)
+map <leader>do <Action>(StepOver)
+map <leader>dO <Action>(StepOut)
+map <leader>de <Action>(QuickEvaluateExpression)
+map <leader>dE <Action>(EvaluateExpression)
 
 map <leader>en <Action>(GotoNextError)
 map <leader>ep <Action>(GotoPreviousError)
