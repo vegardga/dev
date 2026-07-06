@@ -39,7 +39,8 @@ nmap K <Action>(ShowHoverInfo)
 
 nmap <leader>ft <Action>(ActivateTerminalToolWindow)
 nmap <leader>gg <Action>(ActivateCommitToolWindow)
-nmap <leader>e <Action>(ActivateProjectToolWindow)
+" nmap <leader>e <Action>(ActivateProjectToolWindow)
+nmap \\ <Action>(ActivateProjectToolWindow)
 
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j

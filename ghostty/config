@@ -1,4 +1,5 @@
 font-family = "MesloLGL Nerd Font Mono"
+# font-family = "JetBrainsMono Nerd Font Mono"
 # theme = rose-pine-moon
 theme = "catppuccin mocha"
 # background = 000000

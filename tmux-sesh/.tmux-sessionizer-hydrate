@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+tmux send-keys -t $1 'nvim' C-m
+tmux new-window -n git -t $1
+tmux new-window -n console -t $1
+tmux select-window -t "$1":1
